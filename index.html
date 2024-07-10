@@ -56,7 +56,13 @@
                 </li>
                 <li class="flex items-center pl-8 mt-3 lg:mt-0">
                   <div class="flex">
-                    <span id="darkIcon" class="mr-2 text-sm text-slate-500 hidden">
+                    <input type="checkbox" class="hidden" id="darkToggle" />
+                    <label for="darkToggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span id="darkIcon" class="ml-2 text-sm text-slate-500 hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16  ">
                         <rect width="16" height="16" fill="none" />
                         <g fill="#38bdf8">
@@ -69,7 +75,7 @@
                         </g>
                       </svg>
                     </span>
-                    <span id="lightIcon" class="mr-2 text-sm hidden">
+                    <span id="lightIcon" class="ml-2 text-sm hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16">
                         <rect width="16" height="16" fill="none" />
                         <path
@@ -78,12 +84,6 @@
                         />
                       </svg>
                     </span>
-                    <input type="checkbox" class="hidden" id="darkToggle" />
-                    <label for="darkToggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
-                      </div>
-                    </label>
                   </div>
                 </li>
               </ul>
