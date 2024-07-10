@@ -33,13 +33,19 @@ window.addEventListener("click", function (e) {
 // Dark mode toggle
 const darkToggle = document.querySelector("#darkToggle");
 const html = document.querySelector("html");
+const lightIcon = document.querySelector("#lightIcon");
+const darkIcon = document.querySelector("#darkIcon");
 
 darkToggle.addEventListener("click", () => {
   if (darkToggle.checked) {
     html.classList.add("dark");
+    darkIcon.classList.toggle("hidden");
+    lightIcon.classList.toggle("hidden");
     localStorage.theme = "dark";
   } else {
     html.classList.remove("dark");
+    darkIcon.classList.toggle("hidden");
+    lightIcon.classList.toggle("hidden");
     localStorage.theme = "light";
   }
 });
@@ -49,4 +55,10 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
   darkToggle.checked = true;
 } else {
   darkToggle.checked = false;
+}
+
+if (darkToggle.checked == true) {
+  darkIcon.classList.toggle("hidden");
+} else {
+  lightIcon.classList.toggle("hidden");
 }

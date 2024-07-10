@@ -56,14 +56,34 @@
                 </li>
                 <li class="flex items-center pl-8 mt-3 lg:mt-0">
                   <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <span id="darkIcon" class="mr-2 text-sm text-slate-500 hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16  ">
+                        <rect width="16" height="16" fill="none" />
+                        <g fill="#38bdf8">
+                          <path
+                            d="M6 .278a.77.77 0 0 1 .08.858a7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316a.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                          />
+                          <path
+                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+                          />
+                        </g>
+                      </svg>
+                    </span>
+                    <span id="lightIcon" class="mr-2 text-sm hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 16 16">
+                        <rect width="16" height="16" fill="none" />
+                        <path
+                          fill="#fcd34d"
+                          d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                        />
+                      </svg>
+                    </span>
                     <input type="checkbox" class="hidden" id="darkToggle" />
                     <label for="darkToggle">
                       <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
                         <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
                       </div>
                     </label>
-                    <span class="ml-2 text-sm text-slate-500">dark</span>
                   </div>
                 </li>
               </ul>
@@ -79,11 +99,11 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Muhammad Rizieq</span></h1>
+            <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="block font-bold text-dark text-3xl mt-1 lg:text-4xl dark:text-white">Muhammad Rizieq Anwar</span></h1>
             <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student | <span class="text-dark dark:text-white">Junior Developer</span></h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar Web programming itu mudah dan menyenangkan bukan, <span class="text-dark font-bold dark:text-white">bukan!</span></p>
 
-            <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+            <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="lg:flex lg:items-center relative lg:right-0">
@@ -422,8 +442,11 @@
     <!-- footer End -->
 
     <!-- back to top -->
-    <a href="#home" id="toTop" class="fixed bottom-4 p-4 right-4 z-[99999] items-center justify-center h-14 w-14 bg-primary rounded-full hover:animate-pulse hidden">
-      <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    <a href="#home" id="toTop" class="fixed bottom-4 p-4 right-4 z-[9999] items-center justify-center h-14 w-14 bg-primary rounded-full hover:animate-pulse hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 1024 1024">
+        <rect width="1024" height="1024" fill="none" />
+        <path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496" />
+      </svg>
     </a>
 
     <script src="src/js/script.js"></script>
