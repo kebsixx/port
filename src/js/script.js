@@ -28,4 +28,25 @@ window.addEventListener("click", function (e) {
     hamburger.classList.toggle("hamburger-active");
     nav.classList.toggle("hidden");
   }
-})
+});
+
+// Dark mode toggle
+const darkToggle = document.querySelector("#darkToggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", () => {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
+// pindahkan posisi toggle sesuai mode
+if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  darkToggle.checked = true;
+} else {
+  darkToggle.checked = false;
+}
