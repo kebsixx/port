@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.classList.add("dark");
@@ -100,7 +101,7 @@
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class="block font-bold text-dark text-3xl mt-1 lg:text-4xl dark:text-white">Muhammad Rizieq Anwar</span></h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student | <span class="text-dark dark:text-white">Junior Developer</span></h2>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student | <span id="job" class="text-dark dark:text-white"></span></h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar Web programming itu mudah dan menyenangkan bukan, <span class="text-dark font-bold dark:text-white">bukan!</span></p>
 
             <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
@@ -128,12 +129,12 @@
     <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
+          <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-right" data-aos-duration="1000">
             <h4 class="font-bold capitalize text-primary text-lg mb-3">Tentang Saya</h4>
             <h2 class="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl dark:text-white">Mengenal lebih dalam tentang saya</h2>
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus sequi officiis quo iusto quos cupiditate.</p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
+          <div class="w-full px-4 lg:w-1/2" data-aos="fade-left" data-aos-duration="1000">
             <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Ayo berteman!</h3>
             <p class="font-medium text-base text-secondary mb-5 lg:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ut ratione non voluptates ea similique sapiente voluptatibus nihil.</p>
             <div class="flex items-center">
@@ -193,21 +194,21 @@
             <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius optio pariatur consequatur autem voluptatum esse ea eum, saepe ratione.</p>
           </div>
           <div class="w-full px-4 flex flex-wrap justify-center">
-            <div class="mb-12 p-4 md:w-1/3">
+            <div class="mb-12 p-4 md:w-1/3" data-aos="fade-up" data-aos-duration="1000">
               <div class="rounded-md shadow-md overflow-hidden">
                 <img src="src/img/portfolio/1.png" alt="Portfolio Web with Bootstrap" width="w-full" />
               </div>
               <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Landing Page with Bootstrap</h3>
               <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cum tempora, commodi quasi id fugiat.</p>
             </div>
-            <div class="mb-12 p-4 md:w-1/3">
+            <div class="mb-12 p-4 md:w-1/3" data-aos="fade-up" data-aos-duration="1500">
               <div class="rounded-md shadow-md overflow-hidden">
                 <img src="src/img/portfolio/2.png" alt="Class Website with tailwind" width="w-full" />
               </div>
               <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Website Class with Tailwind</h3>
               <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cum tempora, commodi quasi id fugiat.</p>
             </div>
-            <div class="mb-12 p-4 md:w-1/3">
+            <div class="mb-12 p-4 md:w-1/3" data-aos="fade-up" data-aos-duration="2000">
               <div class="rounded-md shadow-md overflow-hidden">
                 <img src="src/img/portfolio/3.png" alt="Landing Page Coffee Shop" width="w-full" />
               </div>
@@ -231,25 +232,25 @@
           </div>
           <div class="w-full px-4">
             <div class="flex flex-wrap items-center justify-center">
-              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/javascript.svg" alt="javascript" />
               </a>
-              <a href="https://www.mongodb.com/" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://www.mongodb.com/" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/mongodb.svg" alt="mongodb" />
               </a>
-              <a href="https://www.expressjs.com" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://www.expressjs.com" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/express.svg" alt="express" />
               </a>
-              <a href="https://www.react.dev" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://www.react.dev" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/reactjs.svg" alt="reactjs" />
               </a>
-              <a href="https://www.php.net/" target="_blank" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://www.php.net/" target="_blank" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/php.svg" alt="php" />
               </a>
-              <a href="https://www.mysql.com/" target="_blank" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://www.mysql.com/" target="_blank" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/mysql.svg" alt="mysql" />
               </a>
-              <a href="https://www.python.org/" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <a href="https://www.python.org/" target="_blank" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 skills-svg">
                 <img src="src/img/skills/python.svg" alt="python" />
               </a>
             </div>
@@ -269,7 +270,7 @@
             <p class="font-medium text-md text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla corrupti vel, delectus ipsa laboriosam quaerat.</p>
           </div>
           <div class="flex flex-wrap">
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 blog-img">
               <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
                 <img src="src/img/blog/1.png" alt="Metode SDLC" width="w-full" />
                 <div class="py-8 px-6">
@@ -281,7 +282,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 blog-img">
               <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
                 <img src="src/img/blog/2.png" alt="SDLC Waterfall" width="w-full" />
                 <div class="py-8 px-6">
@@ -293,7 +294,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 blog-img">
               <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
                 <img src="src/img/blog/1.png" alt="qin shi huang" width="w-full" />
                 <div class="py-8 px-6">
@@ -449,6 +450,34 @@
       </svg>
     </a>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#job", { 
+        strings: ["Junior Developer.", "Design Graphics."],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      const skills = document.querySelectorAll(".skills-svg");
+      const blogImg = document.querySelectorAll(".blog-img");
+
+      skills.forEach((skill, i) => {
+        skill.dataset.aos = "fade-down";
+        skill.dataset.aosDelay = i * 50;
+      });
+
+      blogImg.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDuration = 1000;
+        img.dataset.aosDelay = i * 100;
+      });
+
+      AOS.init({
+        once: true,
+      });
+    </script>
     <script src="src/js/script.js"></script>
   </body>
 </html>
