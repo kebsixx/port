@@ -25,8 +25,8 @@ hamburger.addEventListener("click", () => {
 
 window.addEventListener("click", function (e) {
   if (e.target != hamburger && e.target != nav) {
-    hamburger.classList.toggle("hamburger-active");
-    nav.classList.toggle("hidden");
+    hamburger.classList.remove("hamburger-active");
+    nav.classList.add("hidden");
   }
 });
 
