@@ -12,9 +12,9 @@ module.exports = {
         poppins: ["poppins", "sans-serif"],
       },
       colors: {
-        primary: "#38bdf8",
-        secondary: "#64748b",
-        dark: "#0f172a",
+        primary: "#43766C",
+        secondary: "#9BA4B5",
+        dark: "#222831",
       },
       screens: {
         "2xl": "1320px",
