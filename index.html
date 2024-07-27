@@ -335,7 +335,22 @@
               <textarea type="text" id="messege" class="w-full bg-slate-100 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="Masukkan Pesan..."></textarea>
             </div>
             <div class="w-full px-4">
-              <button class="text-base w-full font-semibold text-white bg-primary py-3 px-8 rounded-full w-1/2 hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+              <button class="text-base flex font-semibold text-white bg-primary py-3 px-8 justify-center rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+                Kirim
+                <span class="ml-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem" viewBox="0 0 20 20">
+                    <rect width="20" height="20" fill="none" />
+                    <g fill="#fff">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.685 6.659c-.926.309-.906 1.626.03 1.906l7.493 2.242l2.447 7.71c.293.922 1.596.932 1.902.013L18.86 2.62a1 1 0 0 0-1.265-1.265zm3.633.897l11.012-3.67l-3.698 11.096l-1.677-5.284a1 1 0 0 0-.667-.655z"
+                        clip-rule="evenodd"
+                      />
+                      <path d="m17.767 1.44l1.044 1.077l-8.828 8.544l-1.044-1.078z" />
+                    </g>
+                  </svg>
+                </span>
+              </button>
             </div>
           </div>
         </form>
@@ -452,7 +467,7 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#job", { 
+      var typed = new Typed("#job", {
         strings: ["Junior Developer.", "Graphics Designer.", "Web Developer."],
         typeSpeed: 50,
         loop: true,
